@@ -3,7 +3,8 @@ const contactos = [
     "Leonardo Fierro",
     "Yanet Olmedo",
     "Rafael",
-    "Sabiya"
+    "Sabiya",
+    "Jairo"
 ];
 
 function imprimirContactos() {
