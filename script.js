@@ -1,4 +1,4 @@
-
+// script.js
 const contactos = [];
 
 function addContact() {
@@ -74,6 +74,19 @@ function clearInputs() {
     document.getElementById("phone").value = "";
     document.getElementById("city").value = "";
     document.getElementById("address").value = "";
+}
+
+function imprimirContactos() {
+    console.log("Lista de Contactos:");
+    contactos.forEach(contacto => {
+        console.log("ID:", contacto.id);
+        console.log("Nombres:", contacto.nombres);
+        console.log("Apellidos:", contacto.apellidos);
+        console.log("Teléfono:", contacto.telefono);
+        console.log("Ciudad:", contacto.ciudad);
+        console.log("Dirección:", contacto.direccion);
+        console.log("-------------------");
+    });
 }
 
 actualizarLista();
